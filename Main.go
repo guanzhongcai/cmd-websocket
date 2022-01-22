@@ -3,13 +3,14 @@ package main
 import (
 	task "cmd-websocket/task"
 	"flag"
-	"github.com/gorilla/websocket"
 	"html/template"
 	"log"
 	"net/http"
+
+	"github.com/gorilla/websocket"
 )
 
-var addr = flag.String("addr", "172.16.8.21:8283", "http service address")
+var addr = flag.String("addr", ":8283", "http service address")
 
 var upgrader = websocket.Upgrader{
 	ReadBufferSize:  1024,
