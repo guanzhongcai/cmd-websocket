@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./Task"
+	task "cmd-websocket/task"
 	"flag"
 	"github.com/gorilla/websocket"
 	"html/template"
@@ -25,7 +25,7 @@ func echo(w http.ResponseWriter, r *http.Request) {
 		log.Print("upgrade:", err)
 		return
 	}
-	cc := Task.GetConnectBean(c)
+	cc := task.GetConnectBean(c)
 	cc.Run()
 }
 
