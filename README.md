@@ -1,11 +1,14 @@
 # cmd-websocket
-项目初衷-懒，用go语言写的websocket服务，用于编译项目、发布服务
 
-具体可结合项目改造
+## 简介
+用go语言写的websocket服务，用于远程执行批处理命令
 
 
-### 此项目依赖：
+
+## 项目依赖：
 
 ​    [gorilla/websocket](https://github.com/gorilla/websocket)
-
-​   
+  
+  
+## 鸣谢
+- [xujakai/cmd-websocket](https://github.com/xujakai/cmd-websocket)
